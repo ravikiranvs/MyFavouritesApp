@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyFavouritesEntities;
 
 namespace MyFavouritesAPI.Controllers;
 
@@ -12,15 +13,18 @@ public class WeatherForecastController : ControllerBase
     };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly AWSMySQL dbContext;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(ILogger<WeatherForecastController> logger, AWSMySQL dbContext)
     {
         _logger = logger;
+        this.dbContext = dbContext;
     }
 
     [HttpGet]
     public IEnumerable<WeatherForecast> Get()
     {
+        var users = dbContext.Users.ToArray();
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
             Date = DateTime.Now.AddDays(index),

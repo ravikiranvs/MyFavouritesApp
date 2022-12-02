@@ -408,3 +408,5 @@ ASALocalRun/
 **/.angular/cache
 
 .vscode
+
+appsettings.Development.json
