@@ -10,6 +10,9 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 
+// Serving static files from wwwroot
+app.UseStaticFiles();
+
 app.UseAuthorization();
 
 app.MapControllers();
