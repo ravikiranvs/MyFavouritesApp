@@ -409,4 +409,4 @@ ASALocalRun/
 
 .vscode
 
-appsettings.Development.json
+MyFavouritesAPI/appsettings.Development.json
