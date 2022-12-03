@@ -3,6 +3,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using MyFavouritesEntities;
+using MyFavouritesRepository;
 using MySql.EntityFrameworkCore.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,8 @@ builder.Services.AddControllers();
 
 var dbConfig = builder.Configuration.GetSection("DBConnectionString").Value;
 builder.Services.AddDbContext<AWSMySQL>(options => options.UseMySQL(dbConfig));
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFavouritesAPI", "MyFavour
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFavouritesEntities", "MyFavouritesEntities\MyFavouritesEntities.csproj", "{6912F75A-93B1-4238-A871-0A50D244E505}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFavouritesRepository", "MyFavouritesRepository\MyFavouritesRepository.csproj", "{AFE3A9A8-53D3-4CC7-B851-3EDCC27D92F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFavouritesBusiness", "MyFavouritesBusiness\MyFavouritesBusiness.csproj", "{0FEEC67B-CD1A-40B2-8E99-EB929A335A8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6912F75A-93B1-4238-A871-0A50D244E505}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6912F75A-93B1-4238-A871-0A50D244E505}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6912F75A-93B1-4238-A871-0A50D244E505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE3A9A8-53D3-4CC7-B851-3EDCC27D92F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE3A9A8-53D3-4CC7-B851-3EDCC27D92F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE3A9A8-53D3-4CC7-B851-3EDCC27D92F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE3A9A8-53D3-4CC7-B851-3EDCC27D92F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FEEC67B-CD1A-40B2-8E99-EB929A335A8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FEEC67B-CD1A-40B2-8E99-EB929A335A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FEEC67B-CD1A-40B2-8E99-EB929A335A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FEEC67B-CD1A-40B2-8E99-EB929A335A8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
