@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore.Design;
 using MyFavouritesEntities;
 using MyFavouritesRepository;
 using MySql.EntityFrameworkCore.Extensions;
-using MyFavouritesAPI.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
