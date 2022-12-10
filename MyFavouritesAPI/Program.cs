@@ -48,8 +48,11 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 
+
 // Serving static files from wwwroot
+app.UseDefaultFiles();
 app.UseStaticFiles();
+
 
 app.UseAuthentication();
 
