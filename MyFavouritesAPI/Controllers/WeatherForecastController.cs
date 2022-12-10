@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyFavouritesEntities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyFavouritesAPI.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
