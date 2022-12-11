@@ -1,6 +1,4 @@
-﻿
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using MyFavouritesEntities;
 using MyFavouritesRepository;
@@ -51,6 +49,7 @@ app.UseHttpsRedirection();
 
 // Serving static files from wwwroot
 app.UseDefaultFiles();
+app.MapFallbackToFile("index.html");
 app.UseStaticFiles();
 
 
@@ -59,7 +58,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
 app.Run();
 
 public class MysqlEntityFrameworkDesignTimeServices : IDesignTimeServices
